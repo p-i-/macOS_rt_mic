@@ -6,7 +6,7 @@
 //  Copyright © 2019 π. All rights reserved.
 //
 
-import AVFoundation // AVAudioEngine
+import AVFoundation // for AVAudioEngine
 
 class Mic
 {
@@ -15,7 +15,7 @@ class Mic
     func startRecording() throws
     {
         // https://forums.developer.apple.com/thread/44833
-        audioEngine.mainMixerNode  // causes DIFFERENT crash!
+        //audioEngine.mainMixerNode  // causes DIFFERENT crash!
 
         audioEngine.prepare()  // CRASHES
 
