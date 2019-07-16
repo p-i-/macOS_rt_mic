@@ -17,9 +17,6 @@ class Mic
         // https://forums.developer.apple.com/thread/44833
         //audioEngine.mainMixerNode  // causes DIFFERENT crash!
 
-        audioEngine.prepare()  // CRASHES
-
-
         let inputNode = audioEngine.inputNode
         if inputNode.inputFormat(forBus: 0).sampleRate == 0 {
             exit(0);
